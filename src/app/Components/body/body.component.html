@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <p class="h4">Ngif</p>
+            <div *ngIf="mostrar" class="card text-white bg-dark mb-3" style="max-width: 60rem; ">
+                <div class="card-header">Header</div>
+                <div class="card-body maximo">
+                    <h5 class="card-title">{{frase.mensaje}}</h5>
+                    <p class="card-text">{{frase.autor}}</p>
+                </div>
+            </div>
+            <button class="btn1" (click)="mostrar = !mostrar"> Mostrar/Ocultar</button>
+
+        </div>
+        <div class="col-md-6 ">
+            <p class="h4">NGFor</p>
+
+            <div class="card text-white bg-secondary mb-3" style="max-width: 60rem; ">
+                <div class="card-header">Header</div>
+                <div class="card-body maximo">
+                    <h5 class="card-title">Primos</h5>
+                    <p *ngFor="let item of amigos" class="card-text">{{item}}</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</div>

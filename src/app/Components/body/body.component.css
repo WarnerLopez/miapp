@@ -1,0 +1,21 @@
+.maximo {
+    height: 700px;
+}
+
+.btn1 {
+    margin-top: 15px;
+    padding: 0.6em 1.2em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(120deg, rgb(29, 26, 29), rgb(70, 14, 25), rgb(48, 44, 37));
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    display: flex;
+    justify-content: center;
+}
+
+.btn1:hover {
+    background-position: 0 0;
+}
